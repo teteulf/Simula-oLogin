@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <section id="section">
+      <span class="login"></span>
+      <div class="formLogin">
+        <div id="formLoginEmail">
+          <h1 class="tituloLogin">SIGN-IN</h1>
+          <br />
+
+          <p id="dadosInvalidos">TESTE</p>
+
+          <input type="text" class="inputLoginEmail" placeholder="Email" />
+          <img
+            src="assets/envelope-regular-24 (1).png"
+            id="imagemEnvelope"
+            alt="imagem_envelope"
+          />
+        </div>
+
+        <div id="formLoginSenha">
+          <input
+            type="password"
+            class="inputLoginSenha"
+            placeholder="Password"
+          />
+          <img
+            src="assets/olho-vermelho.png"
+            id="imagemOlho"
+            alt="imagem_olho"
+          />
+        </div>
+
+        <div id="mensagemDeCadastro">
+          Don't have an account ? <span class="cadastro">Register</span>
+        </div>
+
+        <button id="botaoLogin">entrar</button>
+      </div>
+      <div id="formCadastro" class="hidden">
+        <input
+          type="text"
+          class="input nomeInput"
+          placeholder="Complete Name"
+        />
+        <input type="email" class="input emailInput" placeholder="Email" />
+
+        <input
+          type="date"
+          class="input dataInput"
+          placeholder="Data de nascimento"
+        />
+
+        <input
+          type="password"
+          class="input senhaInput"
+          placeholder="Password"
+        />
+
+        <input
+          type="password"
+          id="confirmarSenha"
+          placeholder="Confirm password"
+        />
+        <button class="botaoCadastro">Finalizar cadastro</button>
+      </div>
+      <p id="senhaIncompativel"></p>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
