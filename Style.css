@@ -1,0 +1,344 @@
+body,
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Correção de box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+body {
+
+    background-image: url(assets/GIF.gif);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+
+.hidden {
+    /* display: none; */
+    opacity: 0;
+
+}
+
+#dadosInvalidos {
+    position: absolute;
+    color: red;
+    margin-top: -5%;
+    left: 36%;
+}
+
+#titulo {
+
+    padding-left: 45%;
+}
+
+#section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+    width: 430px;
+    margin-left: 36%;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 20px;
+    height: 340px;
+    color: white;
+    margin-top: 9.5%;
+    box-sizing: 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    font-family: 'Inclusive Sans', sans-serif;
+    transition: opacity 3s ease-in-out;
+    opacity: 1;
+
+}
+
+.tituloLogin {
+    position: absolute;
+    padding-left: 18%;
+    margin-top: -15%;
+    font-size: 30px;
+}
+
+
+
+.formLoginEmail {
+    display: flex;
+    flex-direction: row;
+
+
+
+
+}
+
+
+.inputLoginEmail {
+
+    border-radius: 20px;
+    height: 28px;
+    border: none;
+    position: absolute;
+    margin-top: 0.5%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 210px;
+    padding-left: 3%;
+    outline: none;
+    left: 25%;
+
+}
+
+input::placeholder {
+
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, .5);
+
+}
+
+#imagemEnvelope {
+    position: relative;
+    top: 9%;
+    left: 77%
+}
+
+.inputLoginSenha {
+
+    border-radius: 20px;
+    height: 28px;
+    border: none;
+    position: absolute;
+    outline: none;
+    background: transparent;
+    left: 25%;
+    border: 1px solid white;
+    width: 210px;
+    padding-left: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+#imagemOlho {
+    position: relative;
+    top: 0%;
+    left: 77%
+}
+
+#imagemOlho:hover {
+
+    cursor: pointer;
+}
+
+
+.formLogin {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 15%;
+    transition: opacity 3s ease-in-out;
+    opacity: 1;
+}
+
+#formLoginSenha {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.cadastro {
+
+    font-weight: bold;
+}
+
+.cadastro:hover {
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#mensagemDeCadastro {
+
+    font-size: ;
+}
+
+#botaoLogin {
+    position: relative;
+    top: -2%;
+    border-radius: 30px;
+    width: 150px;
+    left: 21%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+#botaoLogin:hover {
+
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+
+
+}
+
+#section {
+    opacity: 0;
+    /* Começa com a opacidade 0 para esconder os elementos */
+    transform: translateY(20px);
+    /* Move a seção para baixo (20px) */
+    animation: aparecer 2.5s forwards;
+    /* Aplica a animação "aparecer" por 0.5 segundos */
+    animation-delay: 0.5s;
+    /* Atrasa o início da animação em 0.5 segundos */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        /* Começa com opacidade 0 */
+        transform: translateY(20px);
+        /* Começa com a seção 20px abaixo */
+    }
+
+    to {
+        opacity: 1;
+        /* Termina com opacidade 1 (totalmente visível) */
+        transform: translateY(0);
+        /* Termina sem deslocamento vertical */
+    }
+}
+
+.formCadastro {
+    position: absolute;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    transition: opacity 3s ease-in-out;
+    opacity: 1;
+    width: 200px;
+    outline: none;
+
+}
+
+#confirmarSenha {
+    padding-left: 8%;
+    height: 28px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.input {
+
+    padding-left: 8%;
+    height: 28px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+
+
+
+
+}
