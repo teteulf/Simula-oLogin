@@ -1,4 +1,4 @@
-import DadosCadastrais from "./Class.js";
+import DadosCadastrais from "./class.js";
 import { desapareceLogin, verificaSenha, mostrarSenha } from "./Funções.js";
 
 const cadastro = document.querySelector("#formCadastro");
